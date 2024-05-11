@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: remote-land-management
+Version: 0.0.1
+Summary: Python module for handling traditional land managemnt tasks from afar with IoT
+Author: Jeremy Dyer
+Author-email: jdye64@gmail.com
+Requires-Python: >=3.10
