@@ -1,2 +1,4 @@
 # the rlm virtual env
 /rlm
+
+*.egg-info
