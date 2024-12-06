@@ -21,11 +21,17 @@ for file in requirements_files:
 combined_requirements = list(set(combined_requirements))
 
 setup(
-    name="remote_land_management",
-    version="0.0.1",
-    description="Python module for handling traditional land managemnt tasks from afar with IoT",
     author="Jeremy Dyer",
     author_email="jdye64@gmail.com",
+    name="remote_land_management",
+    version="0.0.1",
+    description="Python module for handling traditional \
+        land managemnt tasks from afar with IoT",
+    entry_points={
+        "console_scripts":
+        ["space-planner=planning.main:main",
+         "server=server.main"]
+    },
     packages=find_packages(where="src"),
     package_dir={"": "src"},
     install_requires=combined_requirements,
